@@ -415,7 +415,7 @@ export default function WeaponStats() {
                           onLoadStart={() => setIsImageLoading(true)}
                           onError={(e) => {
                             setIsImageLoading(false);
-                            (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300";
+                            (e.target as HTMLImageElement).src = "https://images.unsplash.com";
                           }}
                         />
                       )}
