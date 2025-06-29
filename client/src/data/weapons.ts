@@ -1,7 +1,7 @@
 // Mapeamento de nomes de armas para arquivos de imagem
 const weaponImageMap: Record<string, string> = {
   // Assault Rifles
-  "K-TRAC 5.8": "K-Trac_5.8.svg",
+  "K-TRAC 5.8": "rivotriltacticool/weapons/K-Trac_5.8.svg",
   "ARCLIGHT 56": "arclight-56.svg",
   "MAS-47": "mas-47.svg",
   "KRAIT": "krait.svg",
