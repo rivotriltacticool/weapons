@@ -212,7 +212,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: getWeaponImageUrl("ARCLIGHT 56"),
+      image: "/home/project/K-Trac_5.8.svg",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "759" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "978" },
