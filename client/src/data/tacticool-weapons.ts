@@ -9,7 +9,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "rivotriltacticool/weapons/K-Trac_5.8.svg",
+      image: "https://github.com/rivotriltacticool/weapons/blob/7a4594e40d8a6b357072cfeebce520b1faccc8c0/K-Trac_5.8.svg",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "601" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "978" },
