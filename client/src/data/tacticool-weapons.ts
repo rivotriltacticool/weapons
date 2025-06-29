@@ -1,5 +1,16 @@
 import { Weapon } from "@shared/schema";
 
+export const weaponCategories = [
+  { id: "Assault Rifle", label: "Assault Rifle", icon: "fas fa-crosshairs" },
+  { id: "SMG", label: "SMG", icon: "fas fa-bolt" },
+  { id: "Shotgun", label: "Shotgun", icon: "fas fa-fire" },
+  { id: "Sniper Rifle", label: "Sniper Rifle", icon: "fas fa-bullseye" },
+  { id: "Machine Gun", label: "Machine Gun", icon: "fas fa-cog" },
+  { id: "Pistols", label: "Pistols", icon: "fas fa-hand-paper" },
+  { id: "Melee", label: "Melee", icon: "fas fa-sword" },
+  { id: "Prototypes", label: "Prototypes", icon: "fas fa-flask" },
+];
+
 export const tacticoolWeapons: Record<string, Weapon[]> = {
   "Assault Rifle": [
     {
@@ -9,7 +20,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/K-Trac_5.8.svg",
+      image: "/K-Trac_5.8.svg",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "601" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "978" },
@@ -17,18 +28,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "402" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "275-655" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "14.9" },
-        { icon: "fas fa-running", label: "Velocidade", value: "88" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.2" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "88" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.2" },
+      ],
     },
     {
       id: 2,
-      name: "ARCHLIGHT 56",
+      name: "ARCLIGHT 56",
       category: "Assault Rifle",
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Archlight_56.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "759" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "978" },
@@ -36,9 +47,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "262" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "158-885" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "17.4" },
-        { icon: "fas fa-running", label: "Velocidade", value: "91" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.3" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "91" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.3" },
+      ],
     },
     {
       id: 3,
@@ -46,8 +57,8 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       category: "Assault Rifle",
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Comum",
-      stars: 5,
-      image: "/weapons/MAS-47.svg",
+      stars: 3,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "401" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "692" },
@@ -55,9 +66,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "408" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "290-676" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "16.7" },
-        { icon: "fas fa-running", label: "Velocidade", value: "89" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.3" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "89" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.3" },
+      ],
     },
     {
       id: 4,
@@ -65,8 +76,8 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       category: "Assault Rifle",
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Incomum",
-      stars: 5,
-      image: "/weapons/Krait.svg",
+      stars: 4,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "655" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "863" },
@@ -74,9 +85,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "271" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "158-885" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "18.7" },
-        { icon: "fas fa-running", label: "Velocidade", value: "91" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.3" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "91" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.3" },
+      ],
     },
     {
       id: 5,
@@ -84,8 +95,8 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       category: "Assault Rifle",
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Incomum",
-      stars: 5,
-      image: "/weapons/Falcon_A4.svg",
+      stars: 4,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "541" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "863" },
@@ -93,9 +104,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "438" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "253-624" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "15.9" },
-        { icon: "fas fa-running", label: "Velocidade", value: "92" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.5" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "92" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.5" },
+      ],
     },
     {
       id: 6,
@@ -104,7 +115,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/QQ-95.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "911" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1150" },
@@ -112,18 +123,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "264" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "117-798" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "18.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "88" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "88" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.4" },
+      ],
     },
     {
       id: 7,
-      name: "GIDEON",
+      name: "GIDEN",
       category: "Assault Rifle",
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Gideon.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "683" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1150" },
@@ -131,9 +142,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "420" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "280-662" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "15.6" },
-        { icon: "fas fa-running", label: "Velocidade", value: "90" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.5" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "90" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.5" },
+      ],
     },
     {
       id: 8,
@@ -142,7 +153,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Kult-M.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "893" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1150" },
@@ -150,9 +161,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "268" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "122-809" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "18.1" },
-        { icon: "fas fa-running", label: "Velocidade", value: "90" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "90" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.4" },
+      ],
     },
     {
       id: 9,
@@ -161,7 +172,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/VFX150.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "683" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1150" },
@@ -169,9 +180,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "420" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "275-655" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "15.9" },
-        { icon: "fas fa-running", label: "Velocidade", value: "90" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "90" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.4" },
+      ],
     },
     {
       id: 10,
@@ -180,7 +191,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/AUCH.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "1052" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1448" },
@@ -188,9 +199,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "264" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "130-827" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "18.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "90" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.45" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "90" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.45" },
+      ],
     },
     {
       id: 11,
@@ -199,7 +210,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/KANZAZ.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "866" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1448" },
@@ -207,9 +218,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "408" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "265-641" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "16.4" },
-        { icon: "fas fa-running", label: "Velocidade", value: "91" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.6" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "91" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.6" },
+      ],
     },
     {
       id: 12,
@@ -218,7 +229,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/IAR-21.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "1052" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1448" },
@@ -226,9 +237,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "261" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "150-868" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "19.2" },
-        { icon: "fas fa-running", label: "Velocidade", value: "89" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.5" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "89" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.5" },
+      ],
     },
     {
       id: 13,
@@ -237,7 +248,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Vaktor.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "909" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1448" },
@@ -245,9 +256,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "360" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "290-676" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "17.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "88" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "88" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.4" },
+      ],
     },
     {
       id: 14,
@@ -256,7 +267,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/E2_Parajumper.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "1244" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1448" },
@@ -264,9 +275,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "257" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "130-827" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "19.2" },
-        { icon: "fas fa-running", label: "Velocidade", value: "86" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.3" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "86" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.3" },
+      ],
     },
     {
       id: 15,
@@ -275,7 +286,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Old_War.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "779" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1448" },
@@ -283,9 +294,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "450" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "228-592" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "14.9" },
-        { icon: "fas fa-running", label: "Velocidade", value: "92" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.3" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "92" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.3" },
+      ],
     },
     {
       id: 16,
@@ -294,7 +305,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Eclipse.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "1074" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1448" },
@@ -302,9 +313,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "274" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "103-771" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "16.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "87" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.6" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "87" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.6" },
+      ],
     },
     {
       id: 17,
@@ -313,7 +324,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Gremlin.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "823" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1448" },
@@ -321,9 +332,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "450" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "265-641" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "15.4" },
-        { icon: "fas fa-running", label: "Velocidade", value: "92" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.5" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "92" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.5" },
+      ],
     },
     {
       id: 18,
@@ -332,7 +343,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/QQ-95_Gold.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "1188" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1448" },
@@ -340,9 +351,9 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "264" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "117-798" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "18.7" },
-        { icon: "fas fa-running", label: "Velocidade", value: "88" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.5" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "88" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.5" },
+      ],
     },
     {
       id: 19,
@@ -351,28 +362,28 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/SparM8.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "907" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1448" },
-        { icon: "fas fa-bolt", label: "Munição", value: "35" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "139-924" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "275-655" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "15.4" },
-        { icon: "fas fa-running", label: "Velocidade", value: "90" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "0.65-2.6" }
-      ]
-    }
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "90" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "0.65-2.6" },
+      ],
+    },
   ],
   "SMG": [
     {
-      id: 20,
+      id: 1,
       name: "HALBERD V10",
       category: "SMG",
       primary: "ARMA PRIMÁRIA: SMG",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Halberd_V10.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "404" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1136" },
@@ -380,18 +391,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "564" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "360" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.1" },
-        { icon: "fas fa-running", label: "Velocidade", value: "100" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.2" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "100" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.2" },
+      ],
     },
     {
-      id: 21,
+      id: 2,
       name: "ECHELON R",
       category: "SMG",
       primary: "ARMA PRIMÁRIA: SMG",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Echelon_R.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "385" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1136" },
@@ -399,18 +410,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "564" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "360" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.6" },
-        { icon: "fas fa-running", label: "Velocidade", value: "100" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.2" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "100" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.2" },
+      ],
     },
     {
-      id: 22,
+      id: 3,
       name: "TAMO 220",
       category: "SMG",
       primary: "ARMA PRIMÁRIA: SMG",
       rarity: "Comum",
-      stars: 5,
-      image: "/weapons/Tamo_22c.svg",
+      stars: 3,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "277" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "811" },
@@ -418,18 +429,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "522" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "319" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "14.3" },
-        { icon: "fas fa-running", label: "Velocidade", value: "98" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.1" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "98" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.1" },
+      ],
     },
     {
-      id: 23,
+      id: 4,
       name: "KPD-45",
       category: "SMG",
       primary: "ARMA PRIMÁRIA: SMG",
       rarity: "Incomum",
-      stars: 5,
-      image: "/weapons/KPD-45.svg",
+      stars: 4,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "333" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1008" },
@@ -437,18 +448,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "558" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "327" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.1" },
-        { icon: "fas fa-running", label: "Velocidade", value: "101" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.0" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "101" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.0" },
+      ],
     },
     {
-      id: 24,
+      id: 5,
       name: "BOZON",
       category: "SMG",
       primary: "ARMA PRIMÁRIA: SMG",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/BOZON.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "441" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1337" },
@@ -456,18 +467,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "510" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "360" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "14.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "96" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.5" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "96" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.5" },
+      ],
     },
     {
-      id: 25,
+      id: 6,
       name: "PTU80",
       category: "SMG",
       primary: "ARMA PRIMÁRIA: SMG",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/PTU80.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "464" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1337" },
@@ -475,18 +486,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "540" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "334" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "14.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "100" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.1" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "100" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.1" },
+      ],
     },
     {
-      id: 26,
+      id: 7,
       name: "SM50",
       category: "SMG",
       primary: "ARMA PRIMÁRIA: SMG",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/SM50.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "496" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1337" },
@@ -494,210 +505,210 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "468" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "319" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.3" },
-        { icon: "fas fa-running", label: "Velocidade", value: "98" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.0" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "98" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.0" },
+      ],
     },
     {
-      id: 27,
-      name: "PZD C",
+      id: 8,
+      name: "MK20",
       category: "SMG",
       primary: "ARMA PRIMÁRIA: SMG",
-      rarity: "Épico",
+      rarity: "Raro",
       stars: 5,
-      image: "/weapons/PZD_C.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-burn", label: "Dano", value: "588" },
-        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1680" },
-        { icon: "fas fa-bolt", label: "Munição", value: "31" },
-        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "522" },
-        { icon: "fas fa-bullseye", label: "Precisão", value: "339" },
+        { icon: "fas fa-burn", label: "Dano", value: "522" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1337" },
+        { icon: "fas fa-bolt", label: "Munição", value: "32" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "450" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "342" },
+        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.8" },
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "97" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.1" },
+      ],
+    },
+    {
+      id: 9,
+      name: "VENDETTA",
+      category: "SMG",
+      primary: "ARMA PRIMÁRIA: SMG",
+      rarity: "Raro",
+      stars: 5,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      stats: [
+        { icon: "fas fa-burn", label: "Dano", value: "508" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1337" },
+        { icon: "fas fa-bolt", label: "Munição", value: "28" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "504" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "355" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "13.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "100" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.1" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "99" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.3" },
+      ],
     },
     {
-      id: 28,
-      name: "BKS 9/19",
+      id: 10,
+      name: "AUG",
       category: "SMG",
       primary: "ARMA PRIMÁRIA: SMG",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/BK_9_9.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-burn", label: "Dano", value: "617" },
-        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1680" },
+        { icon: "fas fa-burn", label: "Dano", value: "455" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
         { icon: "fas fa-bolt", label: "Munição", value: "27" },
-        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "630" },
-        { icon: "fas fa-bullseye", label: "Precisão", value: "284" },
-        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "11" },
-        { icon: "fas fa-running", label: "Velocidade", value: "110" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "1.7" }
-      ]
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "570" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "311" },
+        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.3" },
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "104" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.5" },
+      ],
     },
     {
-      id: 29,
-      name: "COMPACT-12",
+      id: 11,
+      name: "KAS-12",
       category: "SMG",
       primary: "ARMA PRIMÁRIA: SMG",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Compact-12.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-burn", label: "Dano", value: "588" },
-        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1680" },
-        { icon: "fas fa-bolt", label: "Munição", value: "29" },
-        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "510" },
-        { icon: "fas fa-bullseye", label: "Precisão", value: "385" },
-        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "14.9" },
-        { icon: "fas fa-running", label: "Velocidade", value: "99" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.1" }
-      ]
-    },
-    {
-      id: 30,
-      name: "CAMELBACK",
-      category: "SMG",
-      primary: "ARMA PRIMÁRIA: SMG",
-      rarity: "Épico",
-      stars: 5,
-      image: "/weapons/Camelback.svg",
-      stats: [
-        { icon: "fas fa-burn", label: "Dano", value: "559" },
-        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1680" },
-        { icon: "fas fa-bolt", label: "Munição", value: "32" },
-        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "558" },
-        { icon: "fas fa-bullseye", label: "Precisão", value: "344" },
-        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "14.3" },
-        { icon: "fas fa-running", label: "Velocidade", value: "98" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.3" }
-      ]
-    },
-    {
-      id: 31,
-      name: "KLTR",
-      category: "SMG",
-      primary: "ARMA PRIMÁRIA: SMG",
-      rarity: "Épico",
-      stars: 5,
-      image: "/weapons/KLTR.svg",
-      stats: [
-        { icon: "fas fa-burn", label: "Dano", value: "671" },
-        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "6494" },
-        { icon: "fas fa-bolt", label: "Munição", value: "51" },
-        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "480" },
-        { icon: "fas fa-bullseye", label: "Precisão", value: "284" },
-        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "11.2" },
-        { icon: "fas fa-running", label: "Velocidade", value: "115" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.2" }
-      ]
-    },
-    {
-      id: 32,
-      name: "KURT",
-      category: "SMG",
-      primary: "ARMA PRIMÁRIA: SMG",
-      rarity: "Épico",
-      stars: 5,
-      image: "/weapons/Kurt.svg",
-      stats: [
-        { icon: "fas fa-burn", label: "Dano", value: "606" },
-        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1680" },
-        { icon: "fas fa-bolt", label: "Munição", value: "29" },
-        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "510" },
-        { icon: "fas fa-bullseye", label: "Precisão", value: "334" },
-        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.1" },
-        { icon: "fas fa-running", label: "Velocidade", value: "102" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "1.9" }
-      ]
-    },
-    {
-      id: 33,
-      name: "FERRET-A",
-      category: "SMG",
-      primary: "ARMA PRIMÁRIA: SMG",
-      rarity: "Épico",
-      stars: 5,
-      image: "/weapons/Ferret-A.svg",
-      stats: [
-        { icon: "fas fa-burn", label: "Dano", value: "666" },
-        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1680" },
-        { icon: "fas fa-bolt", label: "Munição", value: "35" },
-        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "540" },
-        { icon: "fas fa-bullseye", label: "Precisão", value: "327" },
-        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "100" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2" }
-      ]
-    },
-    {
-      id: 34,
-      name: "CORVET",
-      category: "SMG",
-      primary: "ARMA PRIMÁRIA: SMG",
-      rarity: "Épico",
-      stars: 5,
-      image: "/weapons/Covert.svg",
-      stats: [
-        { icon: "fas fa-burn", label: "Dano", value: "699" },
-        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1680" },
-        { icon: "fas fa-bolt", label: "Munição", value: "30" },
-        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "480" },
-        { icon: "fas fa-bullseye", label: "Precisão", value: "445" },
-        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "10.8" },
-        { icon: "fas fa-running", label: "Velocidade", value: "104" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.2" }
-      ]
-    },
-    {
-      id: 35,
-      name: "FLASH TO FLESH",
-      category: "SMG",
-      primary: "ARMA PRIMÁRIA: SMG",
-      rarity: "Épico",
-      stars: 5,
-      image: "/weapons/Flash_To_Flesh.svg",
-      stats: [
-        { icon: "fas fa-burn", label: "Dano", value: "547" },
-        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1680" },
-        { icon: "fas fa-bolt", label: "Munição", value: "32" },
-        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "630" },
-        { icon: "fas fa-bullseye", label: "Precisão", value: "310" },
-        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.1" },
-        { icon: "fas fa-running", label: "Velocidade", value: "101" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.2" }
-      ]
-    },
-    {
-      id: 36,
-      name: "DERF SQUIRT MASTER",
-      category: "SMG",
-      primary: "ARMA PRIMÁRIA: SMG",
-      rarity: "Épico",
-      stars: 5,
-      image: "/weapons/Derf_Squirt_Master.svg",
-      stats: [
-        { icon: "fas fa-burn", label: "Dano", value: "673" },
-        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1680" },
-        { icon: "fas fa-bolt", label: "Munição", value: "33" },
+        { icon: "fas fa-burn", label: "Dano", value: "488" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
+        { icon: "fas fa-bolt", label: "Munição", value: "26" },
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "600" },
-        { icon: "fas fa-bullseye", label: "Precisão", value: "284" },
-        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "11" },
-        { icon: "fas fa-running", label: "Velocidade", value: "102" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.3" }
-      ]
-    }
+        { icon: "fas fa-bullseye", label: "Precisão", value: "327" },
+        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "11.8" },
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "106" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.4" },
+      ],
+    },
+    {
+      id: 12,
+      name: "Famas",
+      category: "SMG",
+      primary: "ARMA PRIMÁRIA: SMG",
+      rarity: "Épico",
+      stars: 5,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      stats: [
+        { icon: "fas fa-burn", label: "Dano", value: "421" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
+        { icon: "fas fa-bolt", label: "Munição", value: "25" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "660" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "288" },
+        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "11.5" },
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "105" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.6" },
+      ],
+    },
+    {
+      id: 13,
+      name: "KRISS",
+      category: "SMG",
+      primary: "ARMA PRIMÁRIA: SMG",
+      rarity: "Épico",
+      stars: 5,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      stats: [
+        { icon: "fas fa-burn", label: "Dano", value: "401" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
+        { icon: "fas fa-bolt", label: "Munição", value: "30" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "720" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "255" },
+        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "11.0" },
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "108" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.8" },
+      ],
+    },
+    {
+      id: 14,
+      name: "BANSHEE",
+      category: "SMG",
+      primary: "ARMA PRIMÁRIA: SMG",
+      rarity: "Épico",
+      stars: 5,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      stats: [
+        { icon: "fas fa-burn", label: "Dano", value: "510" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
+        { icon: "fas fa-bolt", label: "Munição", value: "28" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "540" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "340" },
+        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "13.0" },
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "103" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.7" },
+      ],
+    },
+    {
+      id: 15,
+      name: "TULUM",
+      category: "SMG",
+      primary: "ARMA PRIMÁRIA: SMG",
+      rarity: "Épico",
+      stars: 5,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      stats: [
+        { icon: "fas fa-burn", label: "Dano", value: "477" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
+        { icon: "fas fa-bolt", label: "Munição", value: "33" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "630" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "273" },
+        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.0" },
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "107" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.9" },
+      ],
+    },
+    {
+      id: 16,
+      name: "MX4",
+      category: "SMG",
+      primary: "ARMA PRIMÁRIA: SMG",
+      rarity: "Épico",
+      stars: 5,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      stats: [
+        { icon: "fas fa-burn", label: "Dano", value: "435" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
+        { icon: "fas fa-bolt", label: "Munição", value: "35" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "690" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "260" },
+        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "11.2" },
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "109" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.1" },
+      ],
+    },
+    {
+      id: 17,
+      name: "SCORPION",
+      category: "SMG",
+      primary: "ARMA PRIMÁRIA: SMG",
+      rarity: "Épico",
+      stars: 5,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      stats: [
+        { icon: "fas fa-burn", label: "Dano", value: "499" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
+        { icon: "fas fa-bolt", label: "Munição", value: "20" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "588" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "301" },
+        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.5" },
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "110" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.3" },
+      ],
+    },
   ],
   "Shotgun": [
     {
-      id: 37,
+      id: 1,
       name: "OXHEAD",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Oxhead.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "5366" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1395" },
@@ -705,18 +716,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "114" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "135" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "96" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.2" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "96" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.2" },
+      ],
     },
     {
-      id: 38,
+      id: 2,
       name: "REAVER M30",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Beaver_M30.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "4320" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1395" },
@@ -724,18 +735,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "108" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "47" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "8.6" },
-        { icon: "fas fa-running", label: "Velocidade", value: "99" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.2" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "99" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.2" },
+      ],
     },
     {
-      id: 39,
+      id: 3,
       name: "SKAT-A",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Comum",
-      stars: 5,
-      image: "/weapons/Skat-A.svg",
+      stars: 3,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3225" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "988" },
@@ -743,18 +754,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "102" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "27" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "8.6" },
-        { icon: "fas fa-running", label: "Velocidade", value: "97" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.2" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "97" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.2" },
+      ],
     },
     {
-      id: 40,
+      id: 4,
       name: "VEGA DT",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Incomum",
-      stars: 5,
-      image: "/weapons/Vega-DT.svg",
+      stars: 4,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "4708" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1047" },
@@ -762,18 +773,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "96" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "162" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "6.8" },
-        { icon: "fas fa-running", label: "Velocidade", value: "99" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.6" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "99" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.6" },
+      ],
     },
     {
-      id: 41,
+      id: 5,
       name: "TYR-9",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Incomum",
-      stars: 5,
-      image: "/weapons/TYR-9.svg",
+      stars: 4,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3928" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1232" },
@@ -781,18 +792,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "84" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "42" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "8.7" },
-        { icon: "fas fa-running", label: "Velocidade", value: "96" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.6" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "96" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.6" },
+      ],
     },
     {
-      id: 42,
+      id: 6,
       name: "OOPS15",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/OOPS15.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "5637" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1641" },
@@ -800,18 +811,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "84" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "30" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "8.6" },
-        { icon: "fas fa-running", label: "Velocidade", value: "98" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.2" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "98" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.2" },
+      ],
     },
     {
-      id: 43,
+      id: 7,
       name: "REMMY 14",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Remmy_14.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "6555" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1641" },
@@ -819,18 +830,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "90" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "98" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.7" },
-        { icon: "fas fa-running", label: "Velocidade", value: "96" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "96" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.4" },
+      ],
     },
     {
-      id: 44,
+      id: 8,
       name: "UU-10",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/UU-10.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "5268" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1641" },
@@ -838,18 +849,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "90" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "37" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "9.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "97" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.0" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "97" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.0" },
+      ],
     },
     {
-      id: 45,
+      id: 9,
       name: "GRANDMASTER",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/GrandMaster.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "5997" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1641" },
@@ -857,18 +868,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "105" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "87" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "110" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "110" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.4" },
+      ],
     },
     {
-      id: 46,
+      id: 10,
       name: "PAS6",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/PAS6.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "6320" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -876,18 +887,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "75" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "20" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "9.4" },
-        { icon: "fas fa-running", label: "Velocidade", value: "99" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "99" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.4" },
+      ],
     },
     {
-      id: 47,
+      id: 11,
       name: "PUNCHER",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Puncher.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "6986" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -895,18 +906,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "84" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "48" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "9.9" },
-        { icon: "fas fa-running", label: "Velocidade", value: "94" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "94" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.4" },
+      ],
     },
     {
-      id: 48,
+      id: 12,
       name: "THUNDER",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Thunder.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "7892" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -914,18 +925,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "102" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "148" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "6.6" },
-        { icon: "fas fa-running", label: "Velocidade", value: "101" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.7" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "101" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.7" },
+      ],
     },
     {
-      id: 49,
+      id: 13,
       name: "SOURCE",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Source.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "6653" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -933,18 +944,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "78" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "44" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "9.7" },
-        { icon: "fas fa-running", label: "Velocidade", value: "95" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.15" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "95" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.15" },
+      ],
     },
     {
-      id: 50,
+      id: 14,
       name: "HAIL",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Hail.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "8371" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -952,18 +963,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "105" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "108" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "5.9" },
-        { icon: "fas fa-running", label: "Velocidade", value: "102" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.6" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "102" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.6" },
+      ],
     },
     {
-      id: 51,
+      id: 15,
       name: "XL20",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/XL20.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "7972" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -971,18 +982,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "105" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "135" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "99" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.0" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "99" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.0" },
+      ],
     },
     {
-      id: 52,
+      id: 16,
       name: "SHORTY",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Shorty.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "5988" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -990,18 +1001,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "120" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "44" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "8.6" },
-        { icon: "fas fa-running", label: "Velocidade", value: "99" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.3" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "99" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.3" },
+      ],
     },
     {
-      id: 53,
+      id: 17,
       name: "RIO BRAVO",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Rio_Bravo.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "7573" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -1009,18 +1020,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "135" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "102" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.7" },
-        { icon: "fas fa-running", label: "Velocidade", value: "96" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "96" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.4" },
+      ],
     },
     {
-      id: 54,
+      id: 18,
       name: "FURN-S",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Furn-S.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "4257" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -1028,19 +1039,19 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "78" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "44" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "11.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "92" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.4" },
-        { icon: "fas fa-fire", label: "Burn", value: "2059" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "92" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.4" },
+        { icon: "fas fa-fire", label: "Burn", value: "2059" },
+      ],
     },
     {
-      id: 55,
+      id: 19,
       name: "DM-SG",
       category: "Shotgun",
       primary: "ARMA PRIMÁRIA: SHOTGUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/DM-SG.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "6320" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -1048,20 +1059,20 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "120" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "27" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.7" },
-        { icon: "fas fa-running", label: "Velocidade", value: "100" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.4" }
-      ]
-    }
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "100" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.4" },
+      ],
+    },
   ],
   "Sniper Rifle": [
     {
-      id: 56,
+      id: 1,
       name: "TALON S4",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Talon_S4.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "2405" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "817" },
@@ -1069,18 +1080,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "61" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "569-911" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "22.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "85" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.8" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "85" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.8" },
+      ],
     },
     {
-      id: 57,
+      id: 2,
       name: "TITAN S1",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Titan_S1.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "2685" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "817" },
@@ -1088,18 +1099,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "75" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "197-990" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "24.2" },
-        { icon: "fas fa-running", label: "Velocidade", value: "81" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.2" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "81" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.2" },
+      ],
     },
     {
-      id: 58,
+      id: 3,
       name: "VLR-12",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Comum",
-      stars: 5,
-      image: "/weapons/VLR-12.svg",
+      stars: 3,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "1791" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "486" },
@@ -1107,18 +1118,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "66" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "185-972" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "26.4" },
-        { icon: "fas fa-running", label: "Velocidade", value: "80" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.9" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "80" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.9" },
+      ],
     },
     {
-      id: 59,
+      id: 4,
       name: "ARX-204",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Incomum",
-      stars: 5,
-      image: "/weapons/ARX-204.svg",
+      stars: 4,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "2056" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "610" },
@@ -1126,18 +1137,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "59" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "583-925" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "24.8" },
-        { icon: "fas fa-running", label: "Velocidade", value: "84" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.5" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "84" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.5" },
+      ],
     },
     {
-      id: 60,
+      id: 5,
       name: "HOWL",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Incomum",
-      stars: 5,
-      image: "/weapons/Howl.svg",
+      stars: 4,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "2394" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "610" },
@@ -1145,18 +1156,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "76" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "132-885" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "25.3" },
-        { icon: "fas fa-running", label: "Velocidade", value: "78" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "78" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.4" },
+      ],
     },
     {
-      id: 61,
+      id: 6,
       name: "CT 200M",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/CT200M.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "2936" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "961" },
@@ -1164,18 +1175,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "54" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "632-967" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "24.2" },
-        { icon: "fas fa-running", label: "Velocidade", value: "88" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.6" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "88" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.6" },
+      ],
     },
     {
-      id: 62,
+      id: 7,
       name: "TICKLE X3",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Tickle_X3.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3001" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "961" },
@@ -1183,18 +1194,19 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "73" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "132-885" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "24.8" },
-        { icon: "fas fa-running", label: "Velocidade", value: "82" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.0" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "82" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.0" },
+        { icon: "fas fa-tint", label: "Bleed", value: "3" },
+      ],
     },
     {
-      id: 63,
+      id: 8,
       name: "MX2020",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/MX2020.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "2796" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "961" },
@@ -1202,18 +1214,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "60" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "592-935" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "23.1" },
-        { icon: "fas fa-running", label: "Velocidade", value: "87" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "87" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.4" },
+      ],
     },
     {
-      id: 64,
+      id: 9,
       name: "AW",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/AW.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3159" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "961" },
@@ -1221,18 +1233,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "70" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "176-958" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "25.3" },
-        { icon: "fas fa-running", label: "Velocidade", value: "80" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.1" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "80" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.1" },
+      ],
     },
     {
-      id: 65,
+      id: 10,
       name: "MIMI 15",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/MIMI_15.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3453" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1214" },
@@ -1240,18 +1252,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "57" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "547-885" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "20.9" },
-        { icon: "fas fa-running", label: "Velocidade", value: "84" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.45" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "84" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.45" },
+      ],
     },
     {
-      id: 66,
+      id: 11,
       name: "BULLSEYE",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Bullseye.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "4223" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1214" },
@@ -1259,18 +1271,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "60" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "162-935" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "24.2" },
-        { icon: "fas fa-running", label: "Velocidade", value: "77" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.1" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "77" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.1" },
+      ],
     },
     {
-      id: 67,
+      id: 12,
       name: "GF 24",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/GF_24.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3738" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1214" },
@@ -1278,18 +1290,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "53" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "650-981" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "24.8" },
-        { icon: "fas fa-running", label: "Velocidade", value: "82" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.85" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "82" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.85" },
+      ],
     },
     {
-      id: 68,
+      id: 13,
       name: "ATHENA",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Athena.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3740" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1214" },
@@ -1297,18 +1309,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "78" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "162-935" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "23.1" },
-        { icon: "fas fa-running", label: "Velocidade", value: "84" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.3" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "84" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.3" },
+      ],
     },
     {
-      id: 69,
+      id: 14,
       name: "FR USTR8",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/FR_USTR8.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3560" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1214" },
@@ -1316,18 +1328,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "57" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "620-958" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "24.2" },
-        { icon: "fas fa-running", label: "Velocidade", value: "85" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.5" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "85" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.5" },
+      ],
     },
     {
-      id: 70,
+      id: 15,
       name: "OSIRIS",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Osiris.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "4304" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1214" },
@@ -1335,18 +1347,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "60" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "185-972" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "26.4" },
-        { icon: "fas fa-running", label: "Velocidade", value: "77" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "77" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.4" },
+      ],
     },
     {
-      id: 71,
+      id: 16,
       name: "SEE ME NOT",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/SeeMeNot.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3453" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1214" },
@@ -1354,18 +1366,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "55" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "632-967" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "25.3" },
-        { icon: "fas fa-running", label: "Velocidade", value: "82" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.8" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "82" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.8" },
+      ],
     },
     {
-      id: 72,
+      id: 17,
       name: "LONGSHOT-6",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Longshot-6.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "4304" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1214" },
@@ -1373,37 +1385,38 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "63" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "191-981" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "27.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "78" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.3" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "78" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.3" },
+      ],
     },
     {
-      id: 73,
+      id: 18,
       name: "DOOM-INJECT .25",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Doom-Inject25.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "1016" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1214" },
         { icon: "fas fa-bolt", label: "Munição", value: "1" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "385-1000" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "24.2" },
-        { icon: "fas fa-running", label: "Velocidade", value: "85" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "1.35" },
-        { icon: "fas fa-tint", label: "Bleed", value: "1637" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "85" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "1.35" },
+        { icon: "fas fa-tint", label: "Bleed", value: "1637" },
+      ],
     },
     {
-      id: 74,
+      id: 19,
       name: "MP200",
       category: "Sniper Rifle",
       primary: "ARMA PRIMÁRIA: SNIPER RIFLE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/MP200.svg",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "688" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1214" },
@@ -1411,20 +1424,20 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "424" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "771-935" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "23.1" },
-        { icon: "fas fa-running", label: "Velocidade", value: "99" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "1.2" }
-      ]
-    }
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "99" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "1.2" },
+      ],
+    },
   ],
   "Machine Gun": [
     {
-      id: 75,
+      id: 1,
       name: "GRINDCORE",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Grindcore.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "376" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1096" },
@@ -1432,18 +1445,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "384-960" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "76-540" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "18.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "84" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.1" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "84" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.1" },
+      ],
     },
     {
-      id: 76,
+      id: 2,
       name: "PILLAR-2",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Pillar-2.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "786" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1096" },
@@ -1451,18 +1464,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "708" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "112-290" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "16.8" },
-        { icon: "fas fa-running", label: "Velocidade", value: "81" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "5.5" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "81" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "5.5" },
+      ],
     },
     {
-      id: 77,
+      id: 3,
       name: "NM-11",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Comum",
-      stars: 5,
-      image: "/weapons/NM-11.png",
+      stars: 3,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "520" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "770" },
@@ -1470,18 +1483,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "612" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "85-230" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "19.2" },
-        { icon: "fas fa-running", label: "Velocidade", value: "84" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.9" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "84" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.9" },
+      ],
     },
     {
-      id: 78,
+      id: 4,
       name: "OHM-8",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Incomum",
-      stars: 5,
-      image: "/weapons/OHM-8.png",
+      stars: 4,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "690" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "964" },
@@ -1489,18 +1502,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "660" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "90-248" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "17.3" },
-        { icon: "fas fa-running", label: "Velocidade", value: "86" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "5.0" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "86" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "5.0" },
+      ],
     },
     {
-      id: 79,
+      id: 5,
       name: "M-TORQ",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Incomum",
-      stars: 5,
-      image: "/weapons/M-TORQ.png",
+      stars: 4,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "336" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "964" },
@@ -1508,18 +1521,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "420-1050" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "87-579" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "18.7" },
-        { icon: "fas fa-running", label: "Velocidade", value: "82" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "1.9" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "82" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "1.9" },
+      ],
     },
     {
-      id: 80,
+      id: 6,
       name: "MM66",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/MM66.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "904" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1289" },
@@ -1527,18 +1540,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "660" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "94-258" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "18.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "84" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "5.1" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "84" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "5.1" },
+      ],
     },
     {
-      id: 81,
+      id: 7,
       name: "GOSHAN",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Goshan.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "467" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1289" },
@@ -1546,18 +1559,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "402-1005" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "98-624" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "17.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "82" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "1.7" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "82" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "1.7" },
+      ],
     },
     {
-      id: 82,
+      id: 8,
       name: "PRK",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/PRK.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "904" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1289" },
@@ -1565,18 +1578,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "648" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "94-258" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "18.3" },
-        { icon: "fas fa-running", label: "Velocidade", value: "86" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "5.1" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "86" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "5.1" },
+      ],
     },
     {
-      id: 83,
+      id: 9,
       name: "FAULKNER",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Faulkner.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "949" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1289" },
@@ -1584,18 +1597,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "600" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "92-251" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "17.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "88" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "88" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.4" },
+      ],
     },
     {
-      id: 84,
+      id: 10,
       name: "TRIGUN",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Trigun.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "439" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1289" },
@@ -1603,18 +1616,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "450-1125" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "92-594" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "19.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "70" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.3" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "70" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.3" },
+      ],
     },
     {
-      id: 85,
+      id: 11,
       name: "POLOVEC",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Polovec.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "1111" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1627" },
@@ -1622,18 +1635,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "630" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "102-279" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "19.2" },
-        { icon: "fas fa-running", label: "Velocidade", value: "88" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "5.0" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "88" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "5.0" },
+      ],
     },
     {
-      id: 86,
+      id: 12,
       name: "ROTOGUN",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Rotogun.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "574" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1627" },
@@ -1641,18 +1654,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "420-1050" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "87-579" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "18.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "77" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "1.8" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "77" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "1.8" },
+      ],
     },
     {
-      id: 87,
+      id: 13,
       name: "B-FIVE-ONE",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/B-Five-One.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "1065" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1627" },
@@ -1660,18 +1673,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "690" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "90-248" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "18.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "80" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "5.6" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "80" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "5.6" },
+      ],
     },
     {
-      id: 88,
+      id: 14,
       name: "LOST 8",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Lost 8.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "591" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1627" },
@@ -1679,18 +1692,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "480-1200" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "89-587" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "18.3" },
-        { icon: "fas fa-running", label: "Velocidade", value: "75" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "1.8" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "75" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "1.8" },
+      ],
     },
     {
-      id: 89,
+      id: 15,
       name: "STOPPER",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Stopper.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "1179" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1627" },
@@ -1698,18 +1711,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "630" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "98-272" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "19.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "90" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "5.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "90" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "5.4" },
+      ],
     },
     {
-      id: 90,
+      id: 16,
       name: "VANISHER",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Vanisher.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "557" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1627" },
@@ -1717,18 +1730,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "450-1125" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "92-594" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "17.3" },
-        { icon: "fas fa-running", label: "Velocidade", value: "80" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "1.6" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "80" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "1.6" },
+      ],
     },
     {
-      id: 91,
+      id: 17,
       name: "MAXIMUS",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Maximus.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "1145" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1627" },
@@ -1736,18 +1749,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "720" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "87-237" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "17.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "81" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "5.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "81" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "5.4" },
+      ],
     },
     {
-      id: 92,
+      id: 18,
       name: "SCORCHER",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Scorcher.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "603" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1627" },
@@ -1755,38 +1768,39 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "390-975" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "96-613" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "18.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "76" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "1.7" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "76" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "1.7" },
+      ],
     },
     {
-      id: 93,
+      id: 19,
       name: "XO-300",
       category: "Machine Gun",
       primary: "ARMA PRIMÁRIA: MACHINE GUN",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/XO-300.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "577" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1627" },
-        { icon: "fas fa-bolt", label: "Munição", value: "∞" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "429" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "394" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "16.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "77" }
-      ]
-    }
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "77" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
+    },
   ],
   "Pistols": [
     {
-      id: 94,
+      id: 1,
       name: "DART .45",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Dart .45.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "2377" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1395" },
@@ -1794,18 +1808,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "63" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "377-771" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "15" },
-        { icon: "fas fa-running", label: "Velocidade", value: "107" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "4.6" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "107" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "4.6" },
+      ],
     },
     {
-      id: 95,
+      id: 2,
       name: "HARTWELL W8",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Hartwell W8.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "588" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1395" },
@@ -1813,18 +1827,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "201" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "335-553" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12" },
-        { icon: "fas fa-running", label: "Velocidade", value: "96" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.7" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "96" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.7" },
+      ],
     },
     {
-      id: 96,
+      id: 3,
       name: "CXZ-75",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Comum",
-      stars: 5,
-      image: "/weapons/CXZ-75.png",
+      stars: 3,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "426" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "988" },
@@ -1832,36 +1846,37 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "180" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "281-487" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "11" },
-        { icon: "fas fa-running", label: "Velocidade", value: "101" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.9" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "101" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.9" },
+      ],
     },
     {
-      id: 97,
+      id: 4,
       name: "FENRIK",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Comum",
-      stars: 5,
-      image: "/weapons/Fenrik.png",
+      stars: 3,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "200" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
         { icon: "fas fa-bolt", label: "Munição", value: "23" },
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "570" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "115" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "10" },
-        { icon: "fas fa-running", label: "Velocidade", value: "106" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.1" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "106" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.1" },
+      ],
     },
     {
-      id: 98,
+      id: 5,
       name: "VELOS M17",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Incomum",
-      stars: 5,
-      image: "/weapons/Velos M17.png",
+      stars: 4,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "249" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1232" },
@@ -1869,36 +1884,37 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "600" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "135" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "11" },
-        { icon: "fas fa-running", label: "Velocidade", value: "104" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.9" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "104" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.9" },
+      ],
     },
     {
-      id: 99,
+      id: 6,
       name: "LAG-1M",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Incomum",
-      stars: 5,
-      image: "/weapons/Lag-1M.png",
+      stars: 4,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "523" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
         { icon: "fas fa-bolt", label: "Munição", value: "10" },
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "192" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "281-487" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "13" },
-        { icon: "fas fa-running", label: "Velocidade", value: "102" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.1" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "102" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.1" },
+      ],
     },
     {
-      id: 100,
+      id: 7,
       name: "CEDAR",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Cedar.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "358" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1641" },
@@ -1906,18 +1922,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "600" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "181" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "9.2" },
-        { icon: "fas fa-running", label: "Velocidade", value: "102" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.3" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "102" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.3" },
+      ],
     },
     {
-      id: 101,
+      id: 8,
       name: "K1914",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/K1914.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "717" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1641" },
@@ -1925,18 +1941,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "180" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "310-527" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "10" },
-        { icon: "fas fa-running", label: "Velocidade", value: "100" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.0" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "100" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.0" },
+      ],
     },
     {
-      id: 102,
+      id: 9,
       name: "GLUCK18-C",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Gluck18-C.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "334" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1641" },
@@ -1944,18 +1960,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "480" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "155" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "9.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "103" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.9" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "103" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.9" },
+      ],
     },
     {
-      id: 103,
+      id: 10,
       name: "BERTA R106",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Berta R106.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "703" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1641" },
@@ -1963,18 +1979,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "192" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "310-527" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "11.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "98" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "98" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.4" },
+      ],
     },
     {
-      id: 104,
+      id: 11,
       name: "WHILY",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Whily.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "2702" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1641" },
@@ -1982,18 +1998,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "78" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "344-717" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "16.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "106" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "5.5" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "106" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "5.5" },
+      ],
     },
     {
-      id: 105,
+      id: 12,
       name: "LUPARA",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Lupara.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "5679" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -2001,18 +2017,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "120" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "20" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "8" },
-        { icon: "fas fa-running", label: "Velocidade", value: "105" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "5.0" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "105" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "5.0" },
+      ],
     },
     {
-      id: 106,
+      id: 13,
       name: "MACK",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Mack.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "441" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -2020,18 +2036,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "540" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "135" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "10" },
-        { icon: "fas fa-running", label: "Velocidade", value: "105" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.0" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "105" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.0" },
+      ],
     },
     {
-      id: 107,
+      id: 14,
       name: "DIRTY ANTON",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Dirty Anton.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3560" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -2039,18 +2055,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "72" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "377-771" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "16" },
-        { icon: "fas fa-running", label: "Velocidade", value: "105" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "5.0" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "105" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "5.0" },
+      ],
     },
     {
-      id: 108,
+      id: 15,
       name: "MC10",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/MC10.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "454" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -2058,18 +2074,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "552" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "148" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "10.7" },
-        { icon: "fas fa-running", label: "Velocidade", value: "107" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.2" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "107" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.2" },
+      ],
     },
     {
-      id: 109,
+      id: 16,
       name: "HEADHOPPER",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Headhopper.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "861" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -2077,18 +2093,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "210" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "335-553" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "97" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.3" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "97" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.3" },
+      ],
     },
     {
-      id: 110,
+      id: 17,
       name: "NINETECH",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Ninetech.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "459" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -2096,18 +2112,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "480" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "155" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "9.6" },
-        { icon: "fas fa-running", label: "Velocidade", value: "106" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.7" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "106" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.7" },
+      ],
     },
     {
-      id: 111,
+      id: 18,
       name: "SPITTER",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Spitter.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "906" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -2115,18 +2131,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "162" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "255-445" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "13" },
-        { icon: "fas fa-running", label: "Velocidade", value: "102" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.2" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "102" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.2" },
+      ],
     },
     {
-      id: 112,
+      id: 19,
       name: "STORMTROOPER",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Stormtrooper.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3667" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -2134,18 +2150,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "78" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "445-856" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "16" },
-        { icon: "fas fa-running", label: "Velocidade", value: "103" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "5.3" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "103" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "5.3" },
+      ],
     },
     {
-      id: 113,
+      id: 20,
       name: "HOLE PUNCHER",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Hole Puncher.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "951" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -2153,18 +2169,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "168" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "348-566" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "11.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "98" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "2.9" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "98" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "2.9" },
+      ],
     },
     {
-      id: 114,
+      id: 21,
       name: "WIDOW MAKER",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Widow Maker.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3738" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -2172,18 +2188,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "66" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "473-885" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "17" },
-        { icon: "fas fa-running", label: "Velocidade", value: "103" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "5.5" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "103" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "5.5" },
+      ],
     },
     {
-      id: 115,
+      id: 22,
       name: "DICTATOR",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Dictator.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "879" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -2191,18 +2207,18 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "204" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "290-501" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "11" },
-        { icon: "fas fa-running", label: "Velocidade", value: "100" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "100" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.4" },
+      ],
     },
     {
-      id: 116,
+      id: 23,
       name: "GOLDEN GLUCK18-C",
       category: "Pistols",
       primary: "ARMA SECUNDÁRIA: PISTOL",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Golden Gluck18-C.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "428" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
@@ -2210,622 +2226,701 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "480" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "155" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "9.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "103" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.0" }
-      ]
-    }
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "103" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "3.0" },
+      ],
+    },
   ],
   "Melee": [
     {
-      id: 117,
+      id: 1,
       name: "SPLITJAW",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Splitjaw.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "6384" },
+        { icon: "fas fa-burn", label: "Dano", value: "6384" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "51" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "2.15" },
-        { icon: "fas fa-running", label: "Velocidade", value: "96" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "96" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 118,
+      id: 2,
       name: "STRIKEPIN",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Strikepin.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3342" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "730" },
         { icon: "fas fa-bolt", label: "Munição", value: "2" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "171-310" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "98" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "6.6" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "98" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "6.6" },
+      ],
     },
     {
-      id: 119,
+      id: 3,
       name: "KNELL",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Comum",
-      stars: 5,
-      image: "/weapons/Knell.png",
+      stars: 3,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "4751" },
+        { icon: "fas fa-burn", label: "Dano", value: "4751" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "48" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "2.05" },
-        { icon: "fas fa-running", label: "Velocidade", value: "95" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "95" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 120,
+      id: 4,
       name: "BLACKRIDGE",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Incomum",
-      stars: 5,
-      image: "/weapons/Blackridge.png",
+      stars: 4,
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "5664" },
+        { icon: "fas fa-burn", label: "Dano", value: "5664" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "48" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "2.05" },
-        { icon: "fas fa-running", label: "Velocidade", value: "98" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "98" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 121,
+      id: 5,
       name: "ZIGGY",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Ziggy.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3755" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "857" },
         { icon: "fas fa-bolt", label: "Munição", value: "2" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "171-310" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.6" },
-        { icon: "fas fa-running", label: "Velocidade", value: "98" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "6.7" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "98" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "6.7" },
+      ],
     },
     {
-      id: 122,
+      id: 6,
       name: "MACHETE",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Machete.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "7510" },
+        { icon: "fas fa-burn", label: "Dano", value: "7510" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "48" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "2.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "97" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "97" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 123,
+      id: 7,
       name: "COMPOSITE SLASHER",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Composite Slasher.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3605" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "891" },
         { icon: "fas fa-bolt", label: "Munição", value: "2" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "171-310" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "9.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "97" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "7.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "97" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "7.4" },
+      ],
     },
     {
-      id: 124,
+      id: 8,
       name: "SHUANGOU",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Shuangou.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "7135" },
+        { icon: "fas fa-burn", label: "Dano", value: "7135" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "58" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "2.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "100" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "100" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 125,
+      id: 9,
       name: "HEAD CUTTER",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Head Cutter.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3830" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "857" },
         { icon: "fas fa-bolt", label: "Munição", value: "2" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "171-310" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "8.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "96" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "6.8" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "96" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "6.8" },
+      ],
     },
     {
-      id: 126,
+      id: 10,
       name: "CANDY CANE",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Candy Cane.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "7285" },
+        { icon: "fas fa-burn", label: "Dano", value: "7285" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "52" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "2.1" },
-        { icon: "fas fa-running", label: "Velocidade", value: "97" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "97" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 127,
+      id: 11,
       name: "KATANA",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Katana.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "7360" },
+        { icon: "fas fa-burn", label: "Dano", value: "7360" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "56" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "2.1" },
-        { icon: "fas fa-running", label: "Velocidade", value: "95" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "95" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 128,
+      id: 12,
       name: "REAPER",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Reaper.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3530" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "910" },
         { icon: "fas fa-bolt", label: "Munição", value: "2" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "171-310" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "100" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "6.5" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "100" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "6.5" },
+      ],
     },
     {
-      id: 129,
-      name: "PREDATOR'S FANG",
+      id: 13,
+      name: "PREADTOR'S FANG",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Predator's Fang.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "3830" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "857" },
         { icon: "fas fa-bolt", label: "Munição", value: "2" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "171-310" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "9.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "96" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "7.2" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "96" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "7.2" },
+      ],
     },
     {
-      id: 130,
+      id: 14,
       name: "DESPAIR",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Despair.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "7210" },
+        { icon: "fas fa-burn", label: "Dano", value: "7210" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "52" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "1.95" },
-        { icon: "fas fa-running", label: "Velocidade", value: "97" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "97" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 131,
+      id: 15,
       name: "BATON",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Raro",
       stars: 5,
-      image: "/weapons/Baton.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "7510" },
+        { icon: "fas fa-burn", label: "Dano", value: "7510" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "45" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "2.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "100" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "100" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 132,
+      id: 16,
       name: "C-T",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/C-T.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "4649" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1060" },
         { icon: "fas fa-bolt", label: "Munição", value: "8" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "171-310" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.3" },
-        { icon: "fas fa-running", label: "Velocidade", value: "94" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "6.4" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "94" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "6.4" },
+      ],
     },
     {
-      id: 133,
+      id: 17,
       name: "CLEAVER",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Cleaver.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "8647" },
+        { icon: "fas fa-burn", label: "Dano", value: "8647" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "65" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "1.85" },
-        { icon: "fas fa-running", label: "Velocidade", value: "102" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "102" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 134,
+      id: 18,
       name: "TROCKY",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Trocky.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "5114" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "985" },
         { icon: "fas fa-bolt", label: "Munição", value: "8" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "171-310" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "8.7" },
-        { icon: "fas fa-running", label: "Velocidade", value: "95" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "7.2" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "95" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "7.2" },
+      ],
     },
     {
-      id: 135,
+      id: 19,
       name: "ARMATURE",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Armature.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "9949" },
+        { icon: "fas fa-burn", label: "Dano", value: "9949" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "37" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "2.05" },
-        { icon: "fas fa-running", label: "Velocidade", value: "90" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "90" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 136,
+      id: 20,
       name: "THROWING KNIVES",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Throwing Knives.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "4649" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1060" },
         { icon: "fas fa-bolt", label: "Munição", value: "8" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "171-310" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "8.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "97" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "7.0" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "97" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "7.0" },
+      ],
     },
     {
-      id: 137,
+      id: 21,
       name: "TACTICAL SHOVEL",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Tactical Shovel.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "4974" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1060" },
         { icon: "fas fa-bolt", label: "Munição", value: "8" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "171-310" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "8.6" },
-        { icon: "fas fa-running", label: "Velocidade", value: "94" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "7.3" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "94" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "7.3" },
+      ],
     },
     {
-      id: 138,
+      id: 22,
       name: "E-BLADE",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/E-Blade.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "8740" },
+        { icon: "fas fa-burn", label: "Dano", value: "8740" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "60" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "2.05" },
-        { icon: "fas fa-running", label: "Velocidade", value: "100" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "100" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 139,
+      id: 23,
       name: "GENTLE KISS",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Gentle Kiss.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "9484" },
+        { icon: "fas fa-burn", label: "Dano", value: "9484" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "44" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "2.15" },
-        { icon: "fas fa-running", label: "Velocidade", value: "96" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "96" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 140,
+      id: 24,
       name: "SEMPAI",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Sempai.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "4510" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1028" },
         { icon: "fas fa-bolt", label: "Munição", value: "8" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "95" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "7.2" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "95" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "7.2" },
+      ],
     },
     {
-      id: 141,
+      id: 25,
       name: "SURVIVAL TOOL",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Survival Tool.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "9763" },
+        { icon: "fas fa-burn", label: "Dano", value: "9763" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "42" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "2.2" },
-        { icon: "fas fa-running", label: "Velocidade", value: "95" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "95" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 142,
+      id: 26,
       name: "ANCHOR",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Anchor.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "5346" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "955" },
         { icon: "fas fa-bolt", label: "Munição", value: "8" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "171-310" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "9.0" },
-        { icon: "fas fa-running", label: "Velocidade", value: "94" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "7.1" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "94" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "7.1" },
+      ],
     },
     {
-      id: 143,
+      id: 27,
       name: "CANDY CANE GOLD",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Candy Cane Gold.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "8833" },
+        { icon: "fas fa-burn", label: "Dano", value: "8833" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "52" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "2.1" },
-        { icon: "fas fa-running", label: "Velocidade", value: "98" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "98" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 144,
+      id: 28,
       name: "HORROR",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Horror.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "4835" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1060" },
         { icon: "fas fa-bolt", label: "Munição", value: "8" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "171-310" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.7" },
-        { icon: "fas fa-running", label: "Velocidade", value: "95" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "6.5" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "95" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "6.5" },
+      ],
     },
     {
-      id: 145,
+      id: 29,
       name: "HOPE",
       category: "Melee",
       primary: "ARMA CORPO A CORPO: MELEE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Hope.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
-        { icon: "fas fa-fist-raised", label: "Dano", value: "8833" },
+        { icon: "fas fa-burn", label: "Dano", value: "8833" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "N/A" },
+        { icon: "fas fa-bolt", label: "Munição", value: "N/A" },
         { icon: "fas fa-tachometer-alt", label: "Velocidade de Ataque", value: "55" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "1.9" },
-        { icon: "fas fa-running", label: "Velocidade", value: "97" }
-      ]
-    }
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "97" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
+    },
   ],
   "Prototypes": [
     {
-      id: 146,
+      id: 1,
       name: "TAMM",
       category: "Prototypes",
       primary: "ARMA EXPERIMENTAL: PROTOTYPE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Tamm.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "8798" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
         { icon: "fas fa-bolt", label: "Munição", value: "2" },
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "72" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "17" },
-        { icon: "fas fa-running", label: "Velocidade", value: "77" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "1.8" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "77" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "1.8" },
+      ],
     },
     {
-      id: 147,
+      id: 2,
       name: "MRA3-6",
       category: "Prototypes",
       primary: "ARMA EXPERIMENTAL: PROTOTYPE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/MRA3-6.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "1567" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2068" },
         { icon: "fas fa-bolt", label: "Munição", value: "10" },
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "300" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "13" },
-        { icon: "fas fa-running", label: "Velocidade", value: "90" },
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "90" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
         { icon: "fas fa-fire", label: "Burn", value: "2059" },
-        { icon: "fas fa-gas-pump", label: "Fuel", value: "7020" }
-      ]
+        { icon: "fas fa-gas-pump", label: "Fuel", value: "7020" },
+      ],
     },
     {
-      id: 148,
+      id: 3,
       name: "SO TOXIC",
       category: "Prototypes",
       primary: "ARMA EXPERIMENTAL: PROTOTYPE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/So Toxic.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "1614" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2068" },
         { icon: "fas fa-bolt", label: "Munição", value: "8" },
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "300" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "13" },
-        { icon: "fas fa-running", label: "Velocidade", value: "88" },
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "88" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
         { icon: "fas fa-fire", label: "Burn", value: "2112" },
-        { icon: "fas fa-gas-pump", label: "Fuel", value: "7200" }
-      ]
+        { icon: "fas fa-gas-pump", label: "Fuel", value: "7200" },
+      ],
     },
     {
-      id: 149,
+      id: 4,
       name: "ROACH",
       category: "Prototypes",
       primary: "ARMA EXPERIMENTAL: PROTOTYPE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Roach.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "11844" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2068" },
         { icon: "fas fa-bolt", label: "Munição", value: "1" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "173" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "10" },
-        { icon: "fas fa-running", label: "Velocidade", value: "90" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "90" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 150,
+      id: 5,
       name: "GRIMER",
       category: "Prototypes",
       primary: "ARMA EXPERIMENTAL: PROTOTYPE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Grimer.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "12201" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2068" },
         { icon: "fas fa-bolt", label: "Munição", value: "1" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "173" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "10" },
-        { icon: "fas fa-running", label: "Velocidade", value: "93" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "93" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
     },
     {
-      id: 151,
+      id: 6,
       name: "MAXWELL",
       category: "Prototypes",
       primary: "ARMA EXPERIMENTAL: PROTOTYPE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Maxwell.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "8275" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
         { icon: "fas fa-bolt", label: "Munição", value: "2" },
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "81" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "N/A" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "17" },
-        { icon: "fas fa-running", label: "Velocidade", value: "84" },
-        { icon: "fas fa-sync-alt", label: "Recarga", value: "1.7" }
-      ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "84" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "1.7" },
+      ],
     },
     {
-      id: 152,
-      name: "DRAGON WRATH",
+      id: 7,
+      name: "DRAGON WARTH",
       category: "Prototypes",
       primary: "ARMA EXPERIMENTAL: PROTOTYPE",
       rarity: "Épico",
       stars: 5,
-      image: "/weapons/Dragon Wrath.png",
+      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "11487" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2068" },
         { icon: "fas fa-bolt", label: "Munição", value: "1" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "N/A" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "173" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "10" },
-        { icon: "fas fa-running", label: "Velocidade", value: "87" }
-      ]
-    }
-  ]
+        { icon: "fas fa-running", label: "Velocidade do Personagem", value: "87" },
+        { icon: "fas fa-sync-alt", label: "Tempo de Recarga", value: "N/A" },
+      ],
+    },
+  ],
 };
-
-export const weaponCategories = [
-  { id: "Assault Rifle", icon: "fas fa-crosshairs", label: "Assault Rifle" },
-  { id: "SMG", icon: "fas fa-bolt", label: "SMG" },
-  { id: "Shotgun", icon: "fas fa-bomb", label: "Shotgun" },
-  { id: "Sniper Rifle", icon: "fas fa-bullseye", label: "Sniper Rifle" },
-  { id: "Machine Gun", icon: "fas fa-fire", label: "Machine Gun" },
-  { id: "Pistols", icon: "fas fa-circle", label: "Pistols" },
-  { id: "Melee", icon: "fas fa-sword", label: "Melee" },
-  { id: "Prototypes", icon: "fas fa-flask", label: "Prototypes" }
-];
