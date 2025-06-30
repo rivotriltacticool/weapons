@@ -247,7 +247,7 @@ export default function WeaponStats() {
           )}
         </div>
         
-        <main className="flex flex-col lg:flex-row gap-2 sm:gap-4 px-1 sm:px-3 flex-1 overflow-hidden">
+        <main className="flex flex-col lg:flex-row gap-2 sm:gap-4 px-1 sm:px-3 flex-1 overflow-y-auto">
           
           {/* Desktop Category Sidebar */}
           <section className="hidden lg:flex rounded-2xl flex-col items-center py-4 w-[220px] bg-tacticool-teal/60 backdrop-blur-sm">
@@ -277,7 +277,7 @@ export default function WeaponStats() {
           </section>
           
           {/* Weapon Details - Mobile Optimized */}
-          <section className="rounded-xl sm:rounded-2xl flex flex-col flex-1 p-2 sm:p-3 relative bg-tacticool-teal shadow-lg overflow-hidden">
+          <section className="rounded-xl sm:rounded-2xl flex flex-col p-2 sm:p-3 relative bg-tacticool-teal shadow-lg">
             
             {/* Weapon Header - Busca Global */}
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2 gap-2">
