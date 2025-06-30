@@ -33,7 +33,7 @@ var tacticoolWeapons = {
       primary: "ARMA PRIM\xC1RIA: ASSAULT RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "Archlight_56.svg",
+      image: "/Archlight_56.svg",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "759" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "978" },
