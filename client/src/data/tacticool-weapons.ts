@@ -39,7 +39,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       primary: "ARMA PRIMÁRIA: ASSAULT RIFLE",
       rarity: "Raro",
       stars: 5,
-      image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: "/Archlight_56.svg",
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "759" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "978" },
