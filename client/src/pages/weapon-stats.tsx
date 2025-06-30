@@ -395,7 +395,7 @@ export default function WeaponStats() {
                   </button>
                   
                   {/* Container Principal - Mobile Optimized */}
-                  <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-3 sm:gap-6 w-full max-w-[580px] lg:mx-8">
+                  <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-3 sm:gap-6 w-full max-w-[800px] lg:mx-8">
                     
                     {/* Container da Imagem - Mobile Optimized */}
                     <div className="weapon-image-container bg-tacticool-gray/30 rounded-lg p-2 sm:p-3 relative flex items-center justify-center flex-shrink-0 w-full lg:w-[220px]" style={{ height: "120px", maxWidth: "280px" }}>
