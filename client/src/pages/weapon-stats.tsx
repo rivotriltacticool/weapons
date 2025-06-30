@@ -398,7 +398,7 @@ export default function WeaponStats() {
                   <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-3 sm:gap-6 w-full max-w-[580px] lg:mx-8">
                     
                     {/* Container da Imagem - Mobile Optimized */}
-                    <div className="weapon-image-container bg-tacticool-gray/30 rounded-lg p-2 sm:p-3 relative flex items-center justify-center flex-shrink-0 w-full lg:w-[220px]" style={{ height: "120px", maxWidth: "280px" }}>
+                    <div className="weapon-image-container bg-tacticool-gray/30 rounded-lg p-2 sm:p-3 relative flex items-center justify-center flex-shrink-0 w-full lg:w-[520px]" style={{ height: "120px", maxWidth: "280px" }}>
                       {isImageLoading && (
                         <div className="absolute inset-0 flex items-center justify-center">
                           <div className="loading-spinner border-2 border-white/30 border-t-tacticool-accent rounded-full w-5 h-5 animate-spin"></div>
