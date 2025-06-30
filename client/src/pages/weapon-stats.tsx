@@ -457,7 +457,7 @@ export default function WeaponStats() {
                         </div>
                         
                         {/* Stats Grid - Mobile Optimized */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-1 max-h-[400px] sm:max-h-[420px] overflow-y-auto custom-scrollbar">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-1 max-h-[200px] sm:max-h-[220px] overflow-y-auto custom-scrollbar">
                           {currentWeapon.stats.map((stat, index) => (
                             <div 
                               key={index}
