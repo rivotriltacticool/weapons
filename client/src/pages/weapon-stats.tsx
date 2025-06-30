@@ -395,7 +395,7 @@ export default function WeaponStats() {
                   </button>
                   
                   {/* Container Principal - Mobile Optimized */}
-                  <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-3 sm:gap-6 w-full max-w-[800px] lg:mx-8">
+                  <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-3 sm:gap-6 w-full max-w-[580px] lg:mx-8">
                     
                     {/* Container da Imagem - Mobile Optimized */}
                     <div className="weapon-image-container bg-tacticool-gray/30 rounded-lg p-2 sm:p-3 relative flex items-center justify-center flex-shrink-0 w-full lg:w-[220px]" style={{ height: "120px", maxWidth: "280px" }}>
@@ -457,45 +457,41 @@ export default function WeaponStats() {
                         </div>
                         
                         {/* Stats Grid - Mobile Optimized */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-1 lg:max-h-[220px] lg:overflow-y-auto custom-scrollbar">
-  {currentWeapon.stats.map((stat, index) => (
-    <div 
-      key={index}
-      className="stat-item flex items-center justify-between bg-tacticool-gray/30 rounded-md px-2 py-1 opacity-0 transform translate-y-2 animate-fadeInUp"
-      style={{ 
-        animationDelay: `${(index + 1) * 0.1}s`, 
-        animationFillMode: 'forwards',
-        minHeight: '18px'
-      }}
-    >
-      <div className="flex items-center space-x-1 sm:space-x-2 min-w-0 flex-1">
-        <i className={`${stat.icon} text-tacticool-accent w-3 text-[8px] sm:text-[9px] flex-shrink-0`}></i>
-        <span className="text-[8px] sm:text-[9px] truncate">
-          {language === "en" 
-            ? stat.label === "Dano" ? "Damage"
-              : stat.label === "Dano Melee" ? "Melee Dmg"
-              : stat.label === "Munição" ? "Ammo"
-              : stat.label === "Cadência de Tiro" ? "Fire Rate"
-              : stat.label === "Precisão" ? "Accuracy"
-              : stat.label === "Alcance" ? "Range"
-              : stat.label === "Velocidade" ? "Speed"
-              : stat.label === "Recarga" ? "Reload"
-              : stat.label === "Velocidade de Ataque" ? "Atk Speed"
-              : stat.label === "Burn" ? "Queimadura"
-              : stat.label === "Fuel" ? "Combustivel"
-              : stat.label === "Bleed" ? "Sangramento"
-              : stat.label === "Força de Tração" ? "Pull Force"
-              : stat.label === "Velocidade do Ativo" ? "Active Movement Speed"
-              : stat.label === "Distancia da Tração" ? "Pull Distance"
-              : stat.label === "Raio de Dano" ? "Damage Radius"
-              : stat.label
-            : stat.label}
-        </span>
-      </div>
-      <span className="font-bold text-yellow-400 text-[8px] sm:text-[9px] ml-1 sm:ml-2 flex-shrink-0">{stat.value}</span>
-    </div>
-  ))}
-</div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-1 max-h-[200px] sm:max-h-[220px] overflow-y-auto custom-scrollbar">
+                          {currentWeapon.stats.map((stat, index) => (
+                            <div 
+                              key={index}
+                              className="stat-item flex items-center justify-between bg-tacticool-gray/30 rounded-md px-2 py-1 opacity-0 transform translate-y-2 animate-fadeInUp"
+                              style={{ 
+                                animationDelay: `${(index + 1) * 0.1}s`, 
+                                animationFillMode: 'forwards',
+                                minHeight: '18px'
+                              }}
+                            >
+                              <div className="flex items-center space-x-1 sm:space-x-2 min-w-0 flex-1">
+                                <i className={`${stat.icon} text-tacticool-accent w-3 text-[8px] sm:text-[9px] flex-shrink-0`}></i>
+                                <span className="text-[8px] sm:text-[9px] truncate">
+                                  {language === "en" 
+                                    ? stat.label === "Dano" ? "Damage"
+                                      : stat.label === "Dano Melee" ? "Melee Dmg"
+                                      : stat.label === "Munição" ? "Ammo"
+                                      : stat.label === "Cadência de Tiro" ? "Fire Rate"
+                                      : stat.label === "Precisão" ? "Accuracy"
+                                      : stat.label === "Alcance" ? "Range"
+                                      : stat.label === "Velocidade" ? "Speed"
+                                      : stat.label === "Recarga" ? "Reload"
+                                      : stat.label === "Velocidade de Ataque" ? "Atk Speed"
+                                      : stat.label === "Burn" ? "Queimadura"
+                                      : stat.label === "Fuel" ? "Combustivel"
+                                      : stat.label === "Bleed" ? "Sangramento"
+                                      : stat.label === "Força de Tração" ? "Pull Force"
+                                      : stat.label === "Velocidade do Ativo" ? "Active Movement Speed"
+                                      : stat.label === "Distancia da Tração" ? "Pull Distance"
+                                      : stat.label === "Raio de Dano" ? "Damage Radius"
+                                      : stat.label
+                                    : stat.label}
+                                </span>
+                              </div>
                               <span className="font-bold text-yellow-400 text-[8px] sm:text-[9px] ml-1 sm:ml-2 flex-shrink-0">{stat.value}</span>
                             </div>
                           ))}
