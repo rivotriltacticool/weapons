@@ -2,12 +2,12 @@ import { Weapon } from "@shared/schema";
 
 export const weaponCategories = [
   { id: "Assault Rifle", label: "Assault Rifle", icon: "fas fa-crosshairs" },
-  { id: "SMG", label: "SMG", icon: "fas fa-bolt" },
+  { id: "SMG", label: "SMG", icon: "fas fa-burst" },
   { id: "Shotgun", label: "Shotgun", icon: "fas fa-fire" },
   { id: "Sniper Rifle", label: "Sniper Rifle", icon: "fas fa-bullseye" },
-  { id: "Machine Gun", label: "Machine Gun", icon: "fas fa-cog" },
-  { id: "Pistols", label: "Pistols", icon: "fas fa-hand-paper" },
-  { id: "Melee", label: "Melee", icon: "fas fa-sword" },
+  { id: "Machine Gun", label: "Machine Gun", icon: "fas fa-fire" },
+  { id: "Pistols", label: "Pistols", icon: "fas fa-gun" },
+  { id: "Melee", label: "Melee", icon: "fas fa-hammer" },
   { id: "Prototypes", label: "Prototypes", icon: "fas fa-flask" },
 ];
 
