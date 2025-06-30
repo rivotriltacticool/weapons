@@ -423,7 +423,7 @@ export default function WeaponStats() {
                     
                     {/* Container dos Stats - Mobile Optimized */}
                     {currentWeapon && (
-                      <div className="w-full lg:w-[320px] sm:max-h-[420px] text-white font-light leading-tight flex-shrink-0">
+                      <div className="w-full lg:w-[320px] max-h-[400px] sm:max-h-[420px] overflow-y-auto custom-scrollbar text-white font-light leading-tight flex-shrink-0">
                         <p className="text-[8px] sm:text-[9px] font-bold uppercase tracking-widest mb-1 text-tacticool-accent">
                           {language === "en" ? currentWeapon.primary.replace("ARMA PRIMÁRIA:", "PRIMARY WEAPON:").replace("ARMA SECUNDÁRIA:", "SECONDARY WEAPON:").replace("ARMA CORPO A CORPO:", "MELEE WEAPON:").replace("ARMA EXPERIMENTAL:", "EXPERIMENTAL WEAPON:") : currentWeapon.primary}
                         </p>
