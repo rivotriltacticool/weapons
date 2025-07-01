@@ -2500,7 +2500,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "4649" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1060" },
-        { icon: "fas fa-bolt", label: "Munição", value: "8" },
+        { icon: "fas fa-bolt", label: "Munição", value: "2" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "171-310" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.3" },
         { icon: "fas fa-running", label: "Velocidade", value: "94" },
@@ -2533,7 +2533,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
       stats: [
         { icon: "fas fa-burn", label: "Dano", value: "5114" },
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "985" },
-        { icon: "fas fa-bolt", label: "Munição", value: "8" },
+        { icon: "fas fa-bolt", label: "Munição", value: "2" },
         { icon: "fas fa-bullseye", label: "Precisão", value: "171-310" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "8.7" },
         { icon: "fas fa-running", label: "Velocidade", value: "95" },
@@ -2634,7 +2634,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1028" },
         { icon: "fas fa-bolt", label: "Munição", value: "2" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.5" },
-        { icon: "fas fa-running", label: "Velocidade", value: "95" },
+        { icon: "fas fa-running", label: "Velocidade", value: "100" },
         { icon: "fas fa-sync-alt", label: "Recarga", value: "7.2" }
       ]
     },
