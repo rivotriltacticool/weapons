@@ -1139,7 +1139,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.1" },
         { icon: "fas fa-running", label: "Velocidade", value: "92" },
         { icon: "fas fa-sync-alt", label: "Recarga", value: "3.2" },
-        { icon: "fas fa-fire", label: "Burn", value: "2218" }
+        { icon: "fas fa-fire", label: "Queimadura", value: "2218" }
       ]
     }
   ],

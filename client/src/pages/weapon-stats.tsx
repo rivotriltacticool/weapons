@@ -481,13 +481,14 @@ export default function WeaponStats() {
                                       : stat.label === "Velocidade" ? "Speed"
                                       : stat.label === "Recarga" ? "Reload"
                                       : stat.label === "Velocidade de Ataque" ? "Atk Speed"
-                                      : stat.label === "Burn" ? "Queimadura"
-                                      : stat.label === "Fuel" ? "Combustivel"
-                                      : stat.label === "Bleed" ? "Sangramento"
+                                      : stat.label === "Queimadura" ? "Burn"
+                                      : stat.label === "Combustivel" ? "Fuel"
+                                      : stat.label === "Sangramento" ? "Bleed"
                                       : stat.label === "Força de Tração" ? "Pull Force"
                                       : stat.label === "Velocidade do Ativo" ? "Active Movement Speed"
                                       : stat.label === "Distancia da Tração" ? "Pull Distance"
                                       : stat.label === "Raio de Dano" ? "Damage Radius"
+                                      : stat.label === "Força" ? "Power"
                                       : stat.label
                                     : stat.label}
                                 </span>
