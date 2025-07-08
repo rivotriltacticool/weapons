@@ -699,6 +699,46 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-sync-alt", label: "Recarga", value: "3.1" }
       ]
     },
+        {
+      id: 157,
+      name: "SOLANUM-9",
+      category: "SMG",
+      primary: "ARMA PRIMÁRIA: SMG",
+      rarity: "Épico",
+      stars: 5,
+      image: "/Solanum-9.svg",
+      stats: [
+        { icon: "fas fa-burn", label: "Dano", value: "547" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1680" },
+        { icon: "fas fa-bolt", label: "Munição", value: "28" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "552" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "284" },
+        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "13.4" },
+        { icon: "fas fa-running", label: "Velocidade", value: "99" },
+        { icon: "fas fa-sync-alt", label: "Recarga", value: "2" },
+        { icon: "fas fa-burst", label: "Força", value: "6963" }
+      ]
+    },
+        {
+      id: 158,
+      name: "N-TUBE 203",
+      category: "SMG",
+      primary: "ARMA PRIMÁRIA: SMG",
+      rarity: "Épico",
+      stars: 5,
+      image: "/N-Tube203.svg",
+      stats: [
+        { icon: "fas fa-burn", label: "Dano", value: "504" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "1680" },
+        { icon: "fas fa-bolt", label: "Munição", value: "26" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "540" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "266" },
+        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "14.9" },
+        { icon: "fas fa-running", label: "Velocidade", value: "101" },
+        { icon: "fas fa-sync-alt", label: "Recarga", value: "2" },
+        { icon: "fas fa-burst", label: "Força", value: "7567" }
+      ]
+    },
     {
       id: 36,
       name: "DERF SQUIRT MASTER",
@@ -1080,6 +1120,26 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "7.7" },
         { icon: "fas fa-running", label: "Velocidade", value: "100" },
         { icon: "fas fa-sync-alt", label: "Recarga", value: "4.4" }
+      ]
+    },
+    {
+      id: 159,
+      name: "IJ-74",
+      category: "Shotgun",
+      primary: "ARMA PRIMÁRIA: SHOTGUN",
+      rarity: "Épico",
+      stars: 5,
+      image: "/IJ-74.svg",
+      stats: [
+        { icon: "fas fa-burn", label: "Dano", value: "3971" },
+        { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
+        { icon: "fas fa-bolt", label: "Munição", value: "4" },
+        { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "96" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "?" },
+        { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.1" },
+        { icon: "fas fa-running", label: "Velocidade", value: "92" },
+        { icon: "fas fa-sync-alt", label: "Recarga", value: "3.2" },
+        { icon: "fas fa-fire", label: "Burn", value: "2218" }
       ]
     }
   ],
