@@ -489,6 +489,7 @@ export default function WeaponStats() {
                                       : stat.label === "Distancia da Tração" ? "Pull Distance"
                                       : stat.label === "Raio de Dano" ? "Damage Radius"
                                       : stat.label === "Força" ? "Power"
+                                      : stat.label === "Força" ? "Power"
                                       : stat.label
                                     : stat.label}
                                 </span>
