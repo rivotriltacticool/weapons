@@ -1135,7 +1135,7 @@ export const tacticoolWeapons: Record<string, Weapon[]> = {
         { icon: "fas fa-fist-raised", label: "Dano Melee", value: "2067" },
         { icon: "fas fa-bolt", label: "Munição", value: "4" },
         { icon: "fas fa-tachometer-alt", label: "Cadência de Tiro", value: "96" },
-        { icon: "fas fa-bullseye", label: "Precisão", value: "?" },
+        { icon: "fas fa-bullseye", label: "Precisão", value: "30" },
         { icon: "fas fa-ruler-horizontal", label: "Alcance", value: "12.1" },
         { icon: "fas fa-running", label: "Velocidade", value: "92" },
         { icon: "fas fa-sync-alt", label: "Recarga", value: "3.2" },
